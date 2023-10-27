@@ -1,12 +1,15 @@
 {
-    "manifest_version": 2,
-    "name": "YouTube to Yewtu",
-    "version": "1.0",
-    "permissions": [
-      "webNavigation"
-    ],
-    "background": {
-      "scripts": ["background.js"],
-      "persistent": false
-    }
+  "manifest_version": 3,
+  "name": "YouTube to Yewtu",
+  "version": "1.0",
+  "permissions": [
+    "webNavigation",
+    "tabs"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
   }
+}
